@@ -1,0 +1,130 @@
+:root {
+    --clr-primary-400: hsl(25, 97%, 53%);
+
+    --clr-neutral-400: hsl(0, 0%, 100%);
+    --clr-neutral-500: hsl(217, 12%, 63%);
+    --clr-neutral-600: hsl(216, 12%, 54%);
+    --clr-neutral-700: hsl(213, 19%, 18%);
+    --clr-neutral-darker-700: hsl(213, 19%, 14%);
+    --clr-neutral-800: hsl(216, 12%, 8%);
+
+    --fs-regular: 15px;
+    --ff-base: 'Overpass', sans-serif;
+    --fw-light: 400;
+    --fw-bold: 700;
+}
+
+
+body {
+  background-color: var(--clr-neutral-800);
+  font-family: var(--ff-base);
+}
+
+/* Containers */
+
+.grid__container {
+  display: grid;
+  background-color: var(--clr-neutral-darker-700);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 400px;
+  max-height: 400px;
+  margin: 200px 5px;
+}
+
+.flex-group {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  position: relative;
+  top: -10px;
+}
+
+/* Buttons */
+
+.rating_button {
+  background-color: var(--clr-neutral-700);
+  border-radius: 50%;
+  border: none;
+  height: 50px;
+  width: 50px;
+  color: var(--clr-neutral-500);
+  font-weight: var(--fw-bold);
+  font-family: var(--ff-base);
+  line-height: 50px;
+}
+
+.rating_button:hover {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-400);
+  cursor: pointer;
+}
+
+.rating_button:focus {
+  background-color: var(--clr-neutral-500);
+  color: var(--clr-neutral-400);
+}
+
+.submit__button {
+  padding: 15px 120px;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-400);
+  letter-spacing: 2px;
+  font-family: var(--ff-base);
+  font-weight: var(--fw-bold);
+}
+
+.submit__button:hover {
+  background-color: var(--clr-neutral-400);
+  color: var(--clr-primary-400);
+  cursor: pointer;
+}
+
+.submit__box {
+  justify-self: center;
+  margin-top: 20px;
+}
+
+/* Content */
+
+.star-image {
+  background-color: var(--clr-neutral-700);
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.header__question {
+  color: var(--clr-neutral-400);
+  position: relative;
+  top: 10px;
+}
+
+.paragraph_content {
+  color: var(--clr-neutral-500);
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-light);
+}
+
+.header_box {
+  position: relative;
+  top: -15px;
+}
+
+.paragraph_box {
+  position: relative;
+  top: -15px;
+}
+
+/* Media Queries */
+
+@media(min-width: 600px) {
+  body  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+}
